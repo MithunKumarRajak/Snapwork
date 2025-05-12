@@ -1,0 +1,77 @@
+/* c:\snapwork\src\app\login\login.module.css */
+.loginContainer {
+  background: white;
+  padding: 2rem 3rem; /* Equivalent to p-8 px-12 */
+  border-radius: 12px; /* Equivalent to rounded-xl or similar */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Custom shadow */
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.loginForm h2 {
+  text-align: center;
+  margin-bottom: 2rem; /* Equivalent to mb-8 */
+  color: #1565c0; /* A specific blue color */
+  font-size: 1.875rem; /* text-3xl is 1.875rem, keeping consistency with previous h2 */
+  font-weight: 800; /* Corresponds to font-extrabold */
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 1.5rem; /* Equivalent to mb-6 */
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: 1px solid #90caf9;
+  border-radius: 6px; /* Equivalent to rounded-md */
+  background: transparent; /* Changed from none to transparent for clarity */
+  outline: none;
+  transition: border-color 0.3s;
+  color: #333; /* Added for better text visibility */
+}
+
+.inputGroup label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 5px;
+  color: #757575;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  font-size: 16px; /* Ensure label font size matches input before animation */
+}
+
+.inputGroup input:focus,
+.inputGroup input:valid {
+  border-color: #42a5f5;
+}
+
+.inputGroup input:focus + label,
+.inputGroup input:valid + label {
+  top: 0;
+  left: 10px;
+  font-size: 12px;
+  color: #1565c0;
+}
+
+.submitButton { /* Changed from 'button' tag selector to a class for better control */
+  width: 100%;
+  padding: 12px;
+  background-color: #1565c0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px; /* Equivalent to rounded-md */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0d47a1;
+}
